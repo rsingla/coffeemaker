@@ -1,4 +1,4 @@
-package io.apicode.coffee.coffeemaker;
+package io.apicode.coffee.coffeemaker.controller;
 
 import org.springframework.web.bind.annotation.RestController;
 import org.springframework.web.bind.annotation.GetMapping;
@@ -16,6 +16,5 @@ public class CoffeeController {
         return "HealthCheck";
     }
     
-    
-    
+   
 }
