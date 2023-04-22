@@ -41,5 +41,15 @@ public class CourseService {
 
 		return course;
 	}
+	
+	public Course deleteCourse(String id) throws EntityNotFoundException {
+		Course course = courseRepository.getReferenceById(id);
+		
+		courseRepository.delete(course);
+		
+		System.out.println(course);
+
+		return course;
+	}
 
 }
